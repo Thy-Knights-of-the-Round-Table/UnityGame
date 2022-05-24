@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4044706851975016209}
   - component: {fileID: 4044706851975016208}
   - component: {fileID: 4044706851975016211}
-  - component: {fileID: 7075464939146808528}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -113,28 +112,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   target: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
   bullet: {fileID: 3551342326360303430, guid: bccb481d238b2ec48b02a51f51aa4399, type: 3}
   gun: {fileID: 4044706852938143654}
   bulletPosition: {fileID: 4044706852938143655}
   muzzle: {fileID: 2656309661710677456, guid: 6e1e90be26629bf499b7730d54ed1a90, type: 3}
-  fire: {fileID: 0}
   fireRate: 5
   maxDistance: 10
---- !u!114 &7075464939146808528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4044706851975016210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3779c359095944da468a32116e456d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turretHealth: 100
-  turret: {fileID: 2796623431763811639, guid: 96adf46d6620dc34c8779fbd6f47d888, type: 3}
 --- !u!1 &4044706852938143654
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,12 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 3551342326360303430, guid: bccb481d238b2ec48b02a51f51aa4399, type: 3}
-  objPistol: {fileID: 0}
+  objGun: {fileID: 4044706852938143654}
   bulletPos: {fileID: 4044706852938143655}
   fireRate: 15
   muzzle: {fileID: 2656309661710677456, guid: 6e1e90be26629bf499b7730d54ed1a90, type: 3}
-  Text: {fileID: 0}
-  ammoCount: 1
-  currentAmmoCount: 0
-  canShoot: 0
-  gunsound: {fileID: 0}

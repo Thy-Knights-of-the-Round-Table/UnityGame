@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class TrackingSystem : MonoBehaviour
 {
-    private float speed = 70.0f;
+    public float speed = 5.0f;
     public Transform target;
     public Vector3 offset;
     Vector3 lastPosition = Vector3.zero;
     Quaternion lookRotation;
     RaycastHit hit;
+    private float turretHealth = 100.0f;
     public GameObject bullet;
     public GameObject gun;
     public Transform bulletPosition;

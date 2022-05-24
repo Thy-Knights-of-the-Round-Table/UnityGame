@@ -170,7 +170,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ae91f22d1a63642937f995e34ed7a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionSound: {fileID: 0}
   explosion: {fileID: 2082377537843019849}
 --- !u!1 &2082377536254140928
 GameObject:
@@ -48015,7 +48014,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   target: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
   bullet: {fileID: 3551342326360303430, guid: bccb481d238b2ec48b02a51f51aa4399, type: 3}
   gun: {fileID: 0}
   bulletPosition: {fileID: 0}
