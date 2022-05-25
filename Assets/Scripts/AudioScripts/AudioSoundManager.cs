@@ -12,8 +12,9 @@ public class AudioSoundManager : MonoBehaviour
     }
     public static void PlaySoundEffect(AudioClip PlaySound)
     {
+      //Plays All Sounds With Given Preferences
         
-        AudioSources.PlayOneShot(PlaySound, PlayerPrefs.GetFloat("SoundEffects"));
+       AudioSources.PlayOneShot(PlaySound, PlayerPrefs.GetFloat("SoundEffects"));
     }
 
     

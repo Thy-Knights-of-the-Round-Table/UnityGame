@@ -25,6 +25,7 @@ public class Pistol : BaseGunClass, IGun
     public override void Fire()
     {
         AudioSoundManager.PlaySoundEffect(GunSound);
+
         PC.FireGun(GunDamage);
         GunReserveAmmo--;
 

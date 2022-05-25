@@ -5,14 +5,18 @@ using UnityEngine.Audio;
 
 public class Explosion : MonoBehaviour
 {
-    public AudioSource explosionSound;
+    public AudioClip explosionSound;
     public ParticleSystem explosion;
+
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Floor"))
         {
+
+            AudioMixer mixer = Resources.Load("SoundEffects") as AudioMixer;
+            AudioSoundManager.PlaySoundEffect(explosionSound);
             explosion.Play();
-            explosionSound.Play();
+        
         }
     }
 
