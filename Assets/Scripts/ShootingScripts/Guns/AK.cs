@@ -10,6 +10,7 @@ public class AK : MonoBehaviour
     public Transform bulletPos;
     public float fireRate = 15f;
     public ParticleSystem muzzle;
+
     // Ammo
     public TextMeshProUGUI Text;
     public int ammoCount = 100;
@@ -25,6 +26,8 @@ public class AK : MonoBehaviour
         objAK.SetActive(false);
         currentAmmoCount = ammoCount;
         canShoot = true;
+        AudioMixer mixer = Resources.Load("SoundEffects") as AudioMixer;
+
     }
 
     private void FixedUpdate()

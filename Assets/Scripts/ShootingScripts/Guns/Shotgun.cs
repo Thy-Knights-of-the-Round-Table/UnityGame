@@ -39,6 +39,8 @@ public class Shotgun : MonoBehaviour
         currentAmmoCount = ammoCount;
         canShoot = true;
         canShotgun = true;
+        AudioMixer mixer = Resources.Load("SoundEffects") as AudioMixer;
+
     }
 
 

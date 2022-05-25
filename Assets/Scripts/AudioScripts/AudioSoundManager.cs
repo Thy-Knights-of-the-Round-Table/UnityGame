@@ -5,13 +5,16 @@ using UnityEngine;
 public class AudioSoundManager : MonoBehaviour
 {
     public static AudioSource AudioSources;
+    
     private void Start()
     {
         AudioSources = GetComponent<AudioSource>();
     }
     public static void PlaySoundEffect(AudioClip PlaySound)
     {
-        AudioSources.PlayOneShot(PlaySound, 1f);
+        
+        AudioSources.PlayOneShot(PlaySound, PlayerPrefs.GetFloat("SoundEffects"));
     }
 
+    
 }

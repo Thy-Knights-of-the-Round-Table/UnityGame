@@ -27,6 +27,8 @@ public class Sniper : MonoBehaviour
         objSniper.SetActive(false);
         currentAmmoCount = ammoCount;
         canShoot = true;
+        AudioMixer mixer = Resources.Load("SoundEffects") as AudioMixer;
+
     }
 
     private void FixedUpdate()

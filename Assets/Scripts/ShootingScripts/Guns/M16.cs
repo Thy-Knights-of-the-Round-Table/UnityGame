@@ -27,6 +27,8 @@ public class M16 : MonoBehaviour
         currentAmmoCount = ammoCount;
         canShoot = true;
         canBurst = true;
+        AudioMixer mixer = Resources.Load("SoundEffects") as AudioMixer;
+
     }
 
     private void OnEnable()
